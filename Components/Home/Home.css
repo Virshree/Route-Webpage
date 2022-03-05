@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+}
+.home{
+    background-color:tomato ;
+    height: 100vh;
+  
+   
+}
+.home-card{
+    display: flex;
+    flex-wrap: wrap;
+}

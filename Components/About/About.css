@@ -1,0 +1,28 @@
+.about{
+    background-color: gray;
+    color: black;
+    height: auto;
+    text-align: center;
+     padding-top: 20px;
+}
+.aboutfetch{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+ margin: 80px;
+}
+.aboutcard{
+     
+    display: flex;
+    flex-wrap: wrap;
+    background-color: bisque;
+    color: black;
+    box-shadow: 5px 10px 10px black;
+    width:480px;
+    height: 480px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+}
