@@ -2,7 +2,10 @@ import React from 'react'
 import './dashboard.css';
 function dashboard() {
   return (
-    <div className='dashboard'>dashboard</div>
+    <div className='dashboard'>
+      
+      <h2>Welcome to dashboard page</h2>
+      </div>
   )
 }
 
