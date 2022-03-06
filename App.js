@@ -4,7 +4,7 @@ import {BrowserRouter,Route,Routes} from 'react-router-dom';
 import Nav from './Nav';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
-import Dashboard from './Components/Dashboard/dashboard';
+import Dashboard from './Components/Dashboard/Dashboard';
 function App() {
   return (
     <div className="app">
