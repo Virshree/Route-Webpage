@@ -21,6 +21,7 @@ function About() {
   return (
     <div className='about'>
       <h2>Fetching Data from API</h2>
+      <h3>Fetch Data 5000</h3>
       <div className='aboutfetch'>
         {users.data?.map((item,index) => (
           <div className='aboutcard' key={index}>
