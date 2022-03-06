@@ -5,6 +5,7 @@ function Home() {
   return (
     <div className='home'>
             <h1 >Welcome to Home Page.</h1>
+            <h2>Displaying card </h2>
             <div className='home-card'>
         <Card/>
         <Card/>
