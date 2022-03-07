@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 import './Dashboard.css';
 
 
@@ -23,10 +24,14 @@ const handleDel=(key)=>{
 task.splice(key,1);
 setTask(list=>[...list])
 }
-
+const navigate=useNavigate();
+const navigatetoHome=()=>{
+  navigate('/');
+}
   return (
     <div className='dashboard'>
         <h2>Welcome to Dashboard Page </h2>
+        <button onClick={navigatetoHome} className='btn btn-success'>Go to Home</button>
         <div className='dashtodo'>
           <form>
             <input type="text" className='input' value={inputtext} onChange={(e)=>setInputText(e.target.value)} placeholder='Add Task here.'/>

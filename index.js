@@ -3,11 +3,24 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import 'font-awesome/css/font-awesome.min.css';
+//import { Provider } from 'react-redux';
+import {Auth0Provider }from '@auth0/auth0-react';
+//import {store} from './app/store';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+
+    <Auth0Provider
+
+      domain='dev-xtb4vwbc.us.auth0.com'
+      clientId='50kuK6nKkD9gWLVRPZBsKxQTnPgq6ZJJ'
+      redirectUri={window.location.origin}
+    >
+
+
+       <App />
+    </Auth0Provider>
+
   </React.StrictMode>,
   document.getElementById('root')
 );

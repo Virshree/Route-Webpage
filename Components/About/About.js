@@ -3,6 +3,7 @@ import './About.css';
 import axios from 'axios';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { useNavigate } from 'react-router';
 
 function About() {
   useEffect(()=>
@@ -17,11 +18,15 @@ function About() {
   .catch((err)=>console.log(err))
   console.log(users?.data[0])
   }
-
+  const navtoDash=useNavigate();
+const navigatetoDashboard=()=>{
+navtoDash('/dashboard')
+}
   return (
     <div className='about'>
       <h2>Fetching Data from API</h2>
-      <h3>Fetch Data 5000</h3>
+      <h3>Fetching Data for 5000 </h3>
+      <button onClick={navigatetoDashboard} className='btn btn-dark'>Go to Dashboard</button>
       <div className='aboutfetch'>
         {users.data?.map((item,index) => (
           <div className='aboutcard' key={index}>
